@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ###########
-# About: To see the list of users in the github account/ organisation 
-# Input : Export username and export token
-#  while excuting script use Owner Repo example: (./list-usrs.sh Devops-Job-Practice DAY-8---LAB)
+#About: To see the list of users in the github account/ organisation 
+#Input : Export username and export token
+#while excuting script use Owner Repo example: (./list-usrs.sh Devops-Job-Practice DAY-8---LAB)
 ##########
 
 helper()
