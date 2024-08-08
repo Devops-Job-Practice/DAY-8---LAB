@@ -1,5 +1,13 @@
 #!/bin/bash
 
+###########
+# About: To see the list of users in the github account/ organisation 
+# Input : Export username and export token
+#  while excuting script use Owner Repo example: (./list-usrs.sh Devops-Job-Practice DAY-8---LAB)
+##########
+
+helper()
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -10,6 +18,7 @@ TOKEN=$token
 # User and Repository information
 REPO_OWNER=$1
 REPO_NAME=$2
+
 
 # Function to make a GET request to the GitHub API
 function github_api_get {
@@ -35,6 +44,14 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+function helper {
+expected_command_args=2
+if [ $# -ne $expected_command_arg]; then
+ echo "please execute the script with required command arguments"
+ echo "asd"
+}
+
 
 # Main script
 
